@@ -1,0 +1,39 @@
+group 'BestJokesServer'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'idea'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+def springVersion  = '4.2.6.RELEASE'
+def mysqlVersion  = '5.1.43'
+def log4jVersion   = '2.8.2'
+def swaggerVersion = '2.7.0'
+def servletApiVersion = '2.5'
+def jspApiVersion = '2.1'
+def jacksonDatabindVersion = '2.8.1'
+
+dependencies {
+    compile group:'org.apache.logging.log4j', name:'log4j-api', version: log4jVersion
+    compile group:'org.apache.logging.log4j', name:'log4j-core', version: log4jVersion
+
+    compile group: 'org.springframework', name: 'spring-core', version: springVersion
+    compile group: 'org.springframework', name: 'spring-web', version: springVersion
+    compile group: 'org.springframework', name: 'spring-webmvc', version: springVersion
+    compile group: 'org.springframework', name: 'spring-context', version: springVersion
+    compile group: 'org.springframework', name: 'spring-jdbc', version: springVersion
+    compile group: 'org.springframework', name: 'spring-tx', version: springVersion
+
+    compile group: 'mysql', name: 'mysql-connector-java', version: mysqlVersion
+
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: swaggerVersion
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion
+
+    compile group: 'javax.servlet', name: 'servlet-api', version: servletApiVersion
+    compile group: 'javax.servlet.jsp', name: 'jsp-api', version: jspApiVersion
+
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: jacksonDatabindVersion
+}

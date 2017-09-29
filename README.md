@@ -1,10 +1,10 @@
 # BestJokesServer
-This is the project that contains server-side part of the service for storing and adding messages by REST protocol.
+This is the project that contains server-side part of the service for storing and managing messages by REST protocol.
 
 To start the service:
 - install [MySQL server](https://dev.mysql.com/downloads/);
-- run .bat file from the 'docs' folder;
-- install [Apache Tomcat 7.0](https://tomcat.apache.org/download-70.cgi);
+- run .bat file from the 'docs' folder for deploy system;
+- install [Apache Tomcat 7.0](https://tomcat.apache.org/download-70.cgi) server;
 - run server;
 - build and deploy application.
  

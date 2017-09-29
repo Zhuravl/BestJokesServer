@@ -1,0 +1,1 @@
+For creating database execute file 'run.bat'.

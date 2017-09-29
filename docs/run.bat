@@ -1,0 +1,1 @@
+mysql -u root -ppassword < bj_initial_config.sql
